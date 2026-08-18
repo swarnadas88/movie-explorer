@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================================================
+         LOGIN SECTION
+    ========================================================== -->
+
+    <section id="login-section">
+
+        <h2>Login</h2>
+
+        <input
+            type="text"
+            id="loginUsername"
+            placeholder="Username"
+        >
+
+        <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+        >
+
+        <button id="loginButton">
+            Login
+        </button>
+
+        <p id="loginMessage"></p>
+
+    </section>
+
+
+    <!-- =========================================================
+         LOGGED-IN USER / CURRENT ROLES
+    ========================================================== -->
+
+    <section id="role-section">
+
+        <h2>Logged-in User</h2>
+
+        <p>
+            User: <strong id="loggedInUser">Rahul</strong>
+        </p>
+
+        <h3>Current Roles</h3>
+
+        <div id="currentRoles">
+            Loading roles...
+        </div>
+
+
+        <!-- =====================================================
+             ASSIGN ROLE
+        ====================================================== -->
+
+        <h3>Assign Role</h3>
+
+        <select id="roleDropdown">
+
+            <option value="">
+                Select a role
+            </option>
+
+            <option value="1">
+                INSERT
+            </option>
+
+            <option value="2">
+                UPDATE
+            </option>
+
+            <option value="3">
+                DELETE
+            </option>
+
+        </select>
+
+        <button id="assignRoleButton">
+            Assign Role
+        </button>
+
+        <p id="roleMessage"></p>
+
+
+        <!-- =====================================================
+             REMOVE ROLE
+        ====================================================== -->
+
+        <h3>Remove Role</h3>
+
+        <select id="removeRoleDropdown">
+
+            <option value="">
+                Select a role
+            </option>
+
+        </select>
+
+        <button id="removeRoleButton">
+            Remove Role
+        </button>
+
+        <p id="removeRoleMessage"></p>
+
+    </section>
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+
+    <header>
+
+        <h1>🎬 Movie Explorer</h1>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search movies..."
+        >
+
+        <select id="genreFilter">
+
+            <option value="">All Genres</option>
+
+            <option value="Action">
+                Action
+            </option>
+
+            <option value="Sci-Fi">
+                Sci-Fi
+            </option>
+
+            <option value="Romance">
+                Romance
+            </option>
+
+        </select>
+
+    </header>
+
+
+    <!-- =========================================================
+         ADD / UPDATE MOVIE
+    ========================================================== -->
+
+    <section id="add-movie">
+
+        <h2 id="formTitle">Add a Movie</h2>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Movie title"
+        >
+
+        <input
+            type="text"
+            id="genre"
+            placeholder="Genre"
+        >
+
+        <input
+            type="number"
+            id="year"
+            placeholder="Release year"
+        >
+
+        <input
+            type="number"
+            id="rating"
+            placeholder="Rating"
+            step="0.1"
+            min="0"
+            max="10"
+        >
+
+        <button id="addMovieButton">
+            Add Movie
+        </button>
+
+        <button
+            id="updateMovieButton"
+            style="display: none;"
+        >
+            Update Movie
+        </button>
+
+    </section>
+
+
+    <!-- =========================================================
+         ROLE MANAGEMENT
+    ========================================================== -->
+
+    <section id="role-management">
+
+        <h2>Role Management</h2>
+
+        <label for="userSelect">
+            Select User:
+        </label>
+
+        <select id="userSelect">
+
+            <option value="1">
+                Rahul
+            </option>
+
+        </select>
+
+
+        <h3>Current Roles</h3>
+
+        <div id="currentRoles">
+
+            <p>Loading roles...</p>
+
+        </div>
+
+
+        <label for="roleSelect">
+            Assign Role:
+        </label>
+
+        <select id="roleSelect">
+
+            <option value="">
+                Select Role
+            </option>
+
+        </select>
+
+
+        <button id="assignRoleButton">
+            Assign Role
+        </button>
+
+    </section>
+
+
+    <!-- =========================================================
+         MOVIE CARDS
+    ========================================================== -->
+
+    <main id="movie-container"></main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

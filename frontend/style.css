@@ -1,0 +1,365 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #111;
+
+    color: white;
+}
+
+
+/* Header */
+
+header {
+    background-color: #000;
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+header h1 {
+    margin-top: 0;
+
+    margin-bottom: 20px;
+}
+
+
+/* Search box */
+
+#searchInput {
+
+    padding: 12px;
+
+    width: 250px;
+
+    border: 1px solid #444;
+
+    border-radius: 6px;
+
+    background-color: #222;
+
+    color: white;
+
+    font-size: 15px;
+}
+
+
+#searchInput::placeholder {
+    color: #aaa;
+}
+
+
+/* Genre dropdown */
+
+#genreFilter {
+
+    padding: 12px;
+
+    margin-left: 10px;
+
+    border: 1px solid #444;
+
+    border-radius: 6px;
+
+    background-color: #222;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+/* Add Movie Section */
+
+#add-movie {
+
+    background-color: #1c1c1c;
+
+    color: white;
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+    text-align: center;
+}
+
+
+#add-movie h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+}
+
+
+/* Add Movie Inputs */
+
+#add-movie input {
+
+    padding: 12px;
+
+    margin: 5px;
+
+    border: 1px solid #444;
+
+    border-radius: 6px;
+
+    background-color: #222;
+
+    color: white;
+
+    font-size: 15px;
+}
+
+
+#add-movie input::placeholder {
+
+    color: #aaa;
+}
+
+
+/* Add Movie Button */
+
+#addMovieButton {
+
+    padding: 12px 20px;
+
+    margin: 5px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #e50914;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+#addMovieButton:hover {
+
+    background-color: #b20710;
+}
+
+
+/* Movie Container */
+
+#movie-container {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* Movie Card */
+
+.movie-card {
+
+    background-color: #1c1c1c;
+
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.5);
+
+    transition: transform 0.2s;
+}
+
+
+.movie-card:hover {
+
+    transform: translateY(-5px);
+}
+
+
+.movie-card h2 {
+
+    margin-top: 0;
+
+    color: white;
+}
+
+
+.movie-card p {
+
+    margin: 10px 0;
+
+    color: #ccc;
+}
+
+/* Role Management */
+
+#role-management {
+
+    background-color: #1c1c1c;
+
+    color: white;
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.5);
+
+    text-align: center;
+}
+
+
+#role-management h2 {
+
+    margin-top: 0;
+
+}
+
+
+#role-management select {
+
+    padding: 10px;
+
+    margin: 8px;
+
+    border: 1px solid #444;
+
+    border-radius: 6px;
+
+    background-color: #222;
+
+    color: white;
+
+    font-size: 15px;
+
+}
+
+
+#assignRoleButton {
+
+    padding: 10px 18px;
+
+    margin: 8px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #e50914;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+#assignRoleButton:hover {
+
+    background-color: #b20710;
+
+}
+
+
+.role-badge {
+
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    margin: 5px;
+
+    background-color: #333;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+/* Role row */
+
+.role-row {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 8px;
+}
+
+
+/* Remove role button */
+
+.remove-role-button {
+
+    padding: 7px 12px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #555;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+.remove-role-button:hover {
+
+    background-color: #777;
+}
